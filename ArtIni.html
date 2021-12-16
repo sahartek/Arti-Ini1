@@ -1,500 +1,1206 @@
-<!DOCTYPE html>
+<!DOCTYPE html><html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!----===========FAVICON====-->
-    <!--<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">-->
-
-
-    <!--==============REMIX ICONS ============-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-
-    <!--==============CSS=====================-->
-    <link rel="stylesheet" href="stylesheet/styles.css">
-   
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <title>ArtiIni</title>
-
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="#">
+   <meta name="description" content="ArtIni | Let your art see the light">
     
-    <!-----    lightslider -->
-    <link rel="stylesheet" href="stylesheet/lightslider.css">
-    <!------   jquery-->
-    <script type="text/javascript" src="assets/jquery.js"></script>
-    <!--         lightslider.js---->
-    <script type="text/javascript" src="assets/lightslider.js"></script>
+   <!--====FAVICON====-->
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+   <!--==============REMIX ICONS ============-->
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">  
+    
+   <!--==============CSS=====================-->
+   <link rel="stylesheet" href="stylesheet/styles.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+   <title>ArtiIni| Let your art see the light</title>
 
-  
+   <!-- =======Eya Gourar's Styles========== -->
+   <link type="text/css" rel="stylesheet" href="some.css">
+   <link type="text/css" rel="stylesheet" href="slick.css">
+   <link type="text/css" rel="stylesheet" href="slick-min.css">
+   <link type="text/css" rel="stylesheet" href="slider.css">
+   <link type="text/css" rel="stylesheet" href="theme-override.min.css">
+   <link rel="stylesheet" href="https://www.swvl.com/hs-fs/hub/9490826/hub_generated/module_assets/50033739120/1625549610913/module_50033739120_homepage-banner.min.css">
+   <link rel="stylesheet" href="https://www.swvl.com/hubfs/Swvl_June2021/Css/slick.min.css">
+   <link rel="stylesheet" href="https://www.swvl.com/hubfs/Swvl_June2021/Css/slick-theme.min.css">
+   <link rel="stylesheet" href="https://www.swvl.com/hs-fs/hub/9490826/hub_generated/module_assets/50033739815/1629050585381/module_50033739815_swvl-daily-slider.min.css">
+   <style>
+      a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}
+      .hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}
+      .hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}
+      .hs-breadcrumb-menu-divider:before{content:'›';padding-left:10px}
+      .hs-featured-image-link{border:0}
+      .hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}
+      @media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}
+      .hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
+   </style>
+   <style id="hs_editor_style" type="text/css">
+      #hs_cos_wrapper_widget_1625305405132  { display: block !important; padding-right: 0px !important }
+      #hs_cos_wrapper_dnd_area2-module-2  { display: block !important; padding-left: 0px !important; padding-right: 0px !important }
+      #hs_cos_wrapper_module_16309268500143  { display: block !important; margin-bottom: 10px !important; margin-top: 0px !important; padding-left: 0px !important; padding-right: 0px !important }
+      #hs_cos_wrapper_widget_1625306113661  { border-color: #FFFFFF !important; border-style: none !important; border-width: 0px !important; display: block !important; margin-bottom: 10px !important; margin-top: 10px !important; padding-left: 0px !important; padding-right: 36px !important }
+      #hs_cos_wrapper_module_16309268742213  { display: block !important; margin-bottom: 10px !important; margin-top: 10px !important; padding-left: 0px !important; padding-right: 33px !important }
+      .DND_banner-row-0-force-full-width-section > .row-fluid {
+      max-width: none !important;
+      }
+      .dnd_area1-row-0-force-full-width-section > .row-fluid {
+      max-width: none !important;
+      }
+      .widget_1625305405132-flexbox-positioning {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: column !important;
+      -ms-flex-align: end !important;
+      -ms-flex-pack: start;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-end !important;
+      justify-content: flex-start;
+      }
+      .widget_1625305405132-flexbox-positioning > div {
+      max-width: 100%;
+      flex-shrink: 0 !important;
+      }
+      .widget_1625305639935-flexbox-positioning {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: column !important;
+      -ms-flex-align: center !important;
+      -ms-flex-pack: start;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: flex-start;
+      }
+      .widget_1625305639935-flexbox-positioning > div {
+      max-width: 100%;
+      flex-shrink: 0 !important;
+      }
+      .widget_1625305638344-flexbox-positioning {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: column !important;
+      -ms-flex-align: center !important;
+      -ms-flex-pack: start;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: flex-start;
+      }
+      .widget_1625305638344-flexbox-positioning > div {
+      max-width: 100%;
+      flex-shrink: 0 !important;
+      }
+      .widget_1625305636474-flexbox-positioning {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: column !important;
+      -ms-flex-align: center !important;
+      -ms-flex-pack: start;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: flex-start;
+      }
+      .widget_1625305636474-flexbox-positioning > div {
+      max-width: 100%;
+      flex-shrink: 0 !important;
+      }
+      .dnd_area3-row-0-force-full-width-section > .row-fluid {
+      max-width: none !important;
+      }
+      .widget_1625305967013-flexbox-positioning {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: column !important;
+      -ms-flex-align: start !important;
+      -ms-flex-pack: start;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      justify-content: flex-start;
+      }
+      .widget_1625305967013-flexbox-positioning > div {
+      max-width: 100%;
+      flex-shrink: 0 !important;
+      }
+      .widget_1625305990866-flexbox-positioning {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: column !important;
+      -ms-flex-align: start !important;
+      -ms-flex-pack: start;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      justify-content: flex-start;
+      }
+      .widget_1625305990866-flexbox-positioning > div {
+      max-width: 100%;
+      flex-shrink: 0 !important;
+      }
+      .module_16309268500143-flexbox-positioning {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: column !important;
+      -ms-flex-align: start !important;
+      -ms-flex-pack: start;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      justify-content: flex-start;
+      }
+      .module_16309268500143-flexbox-positioning > div {
+      max-width: 100%;
+      flex-shrink: 0 !important;
+      }
+      .widget_1625306113661-flexbox-positioning {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: column !important;
+      -ms-flex-align: start !important;
+      -ms-flex-pack: start;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      justify-content: flex-start;
+      }
+      .widget_1625306113661-flexbox-positioning > div {
+      max-width: 100%;
+      flex-shrink: 0 !important;
+      }
+      .module_16309268742213-flexbox-positioning {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: column !important;
+      -ms-flex-align: start !important;
+      -ms-flex-pack: start;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      justify-content: flex-start;
+      }
+      .module_16309268742213-flexbox-positioning > div {
+      max-width: 100%;
+      flex-shrink: 0 !important;
+      }
+      /* HubSpot Non-stacked Media Query Styles */
+      @media (min-width:768px) {
+      .dnd_area1-row-0-vertical-alignment > .row-fluid {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: row;
+      display: flex !important;
+      flex-direction: row;
+      }
+      .cell_1625305405744-vertical-alignment {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: column !important;
+      -ms-flex-pack: start !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      }
+      .cell_1625305405744-vertical-alignment > div {
+      flex-shrink: 0 !important;
+      }
+      .dnd_area1-column-1-vertical-alignment {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: column !important;
+      -ms-flex-pack: start !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      }
+      .dnd_area1-column-1-vertical-alignment > div {
+      flex-shrink: 0 !important;
+      }
+      .dnd_area2-row-0-vertical-alignment > .row-fluid {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: row;
+      display: flex !important;
+      flex-direction: row;
+      }
+      .dnd_area2-column-1-vertical-alignment {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: column !important;
+      -ms-flex-pack: center !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      }
+      .dnd_area2-column-1-vertical-alignment > div {
+      flex-shrink: 0 !important;
+      }
+      .dnd_area2-column-1-row-1-vertical-alignment > .row-fluid {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: row;
+      display: flex !important;
+      flex-direction: row;
+      }
+      .cell_1625305533657-vertical-alignment {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: column !important;
+      -ms-flex-pack: start !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      }
+      .cell_1625305533657-vertical-alignment > div {
+      flex-shrink: 0 !important;
+      }
+      .cell_1625305532145-vertical-alignment {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: column !important;
+      -ms-flex-pack: start !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      }
+      .cell_1625305532145-vertical-alignment > div {
+      flex-shrink: 0 !important;
+      }
+      .cell_1625305476820-vertical-alignment {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: column !important;
+      -ms-flex-pack: start !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      }
+      .cell_1625305476820-vertical-alignment > div {
+      flex-shrink: 0 !important;
+      }
+      .dnd_area3-row-0-vertical-alignment > .row-fluid {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: row;
+      display: flex !important;
+      flex-direction: row;
+      }
+      .dnd_area3-column-1-vertical-alignment {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: column !important;
+      -ms-flex-pack: center !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      }
+      .dnd_area3-column-1-vertical-alignment > div {
+      flex-shrink: 0 !important;
+      }
+      .dnd_area4-row-0-vertical-alignment > .row-fluid {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: row;
+      display: flex !important;
+      flex-direction: row;
+      }
+      .dnd_area4-column-1-vertical-alignment {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: column !important;
+      -ms-flex-pack: start !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      }
+      .dnd_area4-column-1-vertical-alignment > div {
+      flex-shrink: 0 !important;
+      }
+      .cell_1625305991170-vertical-alignment {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: column !important;
+      -ms-flex-pack: start !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      }
+      .cell_1625305991170-vertical-alignment > div {
+      flex-shrink: 0 !important;
+      }
+      .dnd_area5-row-0-vertical-alignment > .row-fluid {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: row;
+      display: flex !important;
+      flex-direction: row;
+      }
+      .cell_1625306063798-vertical-alignment {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: column !important;
+      -ms-flex-pack: center !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      }
+      .cell_1625306063798-vertical-alignment > div {
+      flex-shrink: 0 !important;
+      }
+      .cell_1625306063798-row-0-vertical-alignment > .row-fluid {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: row;
+      display: flex !important;
+      flex-direction: row;
+      }
+      .cell_1625306063798-row-1-vertical-alignment > .row-fluid {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: row;
+      display: flex !important;
+      flex-direction: row;
+      }
+      .cell_1625306063798-row-2-vertical-alignment > .row-fluid {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: row;
+      display: flex !important;
+      flex-direction: row;
+      }
+      .cell_1625306127140-vertical-alignment {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: column !important;
+      -ms-flex-pack: start !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      }
+      .cell_1625306127140-vertical-alignment > div {
+      flex-shrink: 0 !important;
+      }
+      .cell_1630926723521-vertical-alignment {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: column !important;
+      -ms-flex-pack: center !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      }
+      .cell_1630926723521-vertical-alignment > div {
+      flex-shrink: 0 !important;
+      }
+      .cell_1630926874221-vertical-alignment {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: column !important;
+      -ms-flex-pack: center !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      }
+      .cell_1630926874221-vertical-alignment > div {
+      flex-shrink: 0 !important;
+      }
+      }
+      .dnd_area1-column-1-padding {
+      padding-left: 10vw !important;
+      padding-right: 0px !important;
+      }
+      .dnd_area2-column-1-padding {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      }
+      .dnd_area2-module-2-hidden {
+      display: block !important;
+      }
+      .cell_1625305533657-padding {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      }
+      .cell_1625305532145-padding {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      }
+      .cell_1625305476820-padding {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      }
+      .dnd_area3-column-1-padding {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      }
+      .cell_1625306063798-padding {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      }
+   </style>
+   <!--======End of Eya's styles=======-->
 
 
+   <!---lightslider -->
+   <link rel="stylesheet" href="stylesheet/lightslider.css">
+   <!-- jquery-->
+   <script type="text/javascript" src="assets/jquery.js"></script>
+   <!--         lightslider.js---->
+   <script type="text/javascript" src="assets/lightslider.js"></script>
 </head>
 <body>
-    <header  id="navbar" class="header bg-transp" id="header">
-        <nav class="nav container ">
-            <a href="#" class="nav_logo">
-                <img src="Images/logo.png.png" alt="">
-            </a>
-            <div class="nav__menu " id="nav-menu">
-                <ul class="nav__list">
-                    
-                        <li class="nav__item">
-                            <a href="#Home" class="nav__link">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#About" class="nav__link">About</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#painting" class="nav__link">Painting</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#Writing" class="nav__link">Writing</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__button button--flex"><button type="button">Log in</button></a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#"  class="nav__button button--flex"><button type="button">Sign up</button></a>
-                        </li>
-
-                </ul>
-
-                <div class="nav__close" id="nav-close">
-                        <i class="ri-close-line"></i>
-                </div>
-                    
-                   
+   <header  id="navbar" class="header bg-transp" id="header">
+      <nav class="nav container ">
+         <a href="#" class="nav_logo">
+         <img src="Images/logo.png.png" alt="">
+         </a>
+         <div class="nav__menu " id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a href="#Home" class="nav__link">Home</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#About" class="nav__link">About</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#painting" class="nav__link">Painting</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#Writing" class="nav__link">Writing</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#" class="nav__button button--flex"><button type="button">Log in</button></a>
+               </li>
+               <li class="nav__item">
+                  <a href="#"  class="nav__button button--flex"><button type="button">Sign up</button></a>
+               </li>
+            </ul>
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-line"></i>
             </div>
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-line"></i>
-                </div>
-            
-        </nav>
-
-    </header>
-    <main class="main">
-        <div class="home__blob">
-            <svg width="926" height="720" viewBox="0 0 926 720" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0H565.328C764.015 0 925.082 161.067 925.082 359.754C925.082 558.441 764.015 719.508 565.328 719.508H462.541C207.087 719.508 0 512.422 0 256.967V0Z" fill="#C49EB7"/>
-             </svg>
-        </div> 
-        <!--=============== HOME ==================-->
-        <section class="home" id="home">
-            <div class="home__container container grid">
-                <div class="home__img-bg">
-                    
-
-                   
-               <!--   <img src="Images/homepic1.jpg" alt="" class="home__img"> -->
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="Images/homepic1.jpg" alt=""></div>
-                          <div class="swiper-slide"><img src="Images/homepic2.jpg" alt=""></div>
-                          <div class="swiper-slide"><img src="Images/homepic3.jpg" alt=""></div>
-                          <div class="swiper-slide"><img src="Images/homepic4.jpg" alt=""></div>
-                         
+         </div>
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+         </div>
+      </nav>
+   </header>
+   <main class="main">
+   <div class="home__blob">
+      <svg width="926" height="720" viewBox="0 0 926 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path d="M0 0H565.328C764.015 0 925.082 161.067 925.082 359.754C925.082 558.441 764.015 719.508 565.328 719.508H462.541C207.087 719.508 0 512.422 0 256.967V0Z" fill="#C49EB7"/>
+      </svg>
+   </div>
+   <!--=============== HOME ==================-->
+   <section class="home" id="home">
+      <div class="home__container container grid">
+         <div class="home__img-bg">
+            <!--   <img src="Images/homepic1.jpg" alt="" class="home__img"> -->
+            <div class="swiper mySwiper">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="Images/homepic1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="Images/homepic2.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="Images/homepic3.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="Images/homepic4.jpg" alt=""></div>
+               </div>
+               <div class="swiper-button-next"></div>
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-pagination"></div>
+            </div>
+         </div>
+         <div class="home__data">
+            <h6 class="home__subtitle">
+               Let your art see the light <br>
+            </h6>
+            <h1 class="home__title">
+               The expression of<br> human skill
+            </h1>
+            <p class="home__description">Share your incredile creations with an artholic community</p>
+            <a href="signUP" class="button button--flex">Join the community </a>
+         </div>
+      </div>
+   </section>
+   <!--============= ABOUT section - Eya Gourar =====================-->
+   <div id="main-content" class="body-container-wrapper home-page">
+      <div class="container-fluid row1-content-home">
+         <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+               <div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
+                  <div class="row-fluid-wrapper row-depth-1 row-number-1 dnd-section dnd_area1-row-0-vertical-alignment dnd_area1-row-0-force-full-width-section">
+                     <div class="row-fluid ">
+                        <div class="span5 widget-span widget-type-cell dnd-column dnd_area1-column-1-padding dnd_area1-column-1-vertical-alignment" style="" data-widget-type="cell" data-x="0" data-w="5">
+                           <div class="row-fluid-wrapper row-depth-1 row-number-2 dnd-row">
+                              <div class="row-fluid ">
+                                 <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+                                    <div id="hs_cos_wrapper_dnd_area1-module-2" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                                       <span id="hs_cos_wrapper_dnd_area1-module-2_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text">
+                                          <audio id="swvlAudio" src="#"></audio>
+                                          <h2>ArtIni/ɑː(r)tɪnɪ/<br>noun, verb, adjective<img id="swvlprononce" alt="sound" src="sound.svg"></h2>
+                                          <h4>A lovely, safe and convenient plateform for arts, <br />committed to enabling keen people to share  <br> their creations. <br><br><span class="mulish-black-thunder-40px">Because it simply matters.</span></h4>
+                                       </span>
+                                    </div>
+                                 </div>
+                                 <!--end widget-span -->
+                              </div>
+                              <!--end row-->
+                           </div>
+                           <!--end row-wrapper -->
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                      </div>
-                  
-                    
-                        
-                </div>
-               
-
-                <div class="home__data">
-                    <h6 class="home__subtitle">
-                        Let your art see the light <br>
-                    </h6>
-                    <h1 class="home__title">
-                        The expression of<br> human skill
-                    </h1>
-                    <p class="home__description">Share your incredile creations with an artholic community</p>
-                    <a href="signUP" class="button button--flex">Join the community </a>
-                </div>
+                        <!--end widget-span -->
+                        <div class="span7 widget-span widget-type-cell dnd-column cell_1625305405744-vertical-alignment" style="" data-widget-type="cell" data-x="5" data-w="7">
+                           <div class="row-fluid-wrapper row-depth-1 row-number-3 dnd-row">
+                              <div class="row-fluid ">
+                                 <div class="span12 widget-span widget-type-custom_widget widget_1625305405132-flexbox-positioning dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+                                    <div id="hs_cos_wrapper_widget_1625305405132" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-linked_image" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                                       <span id="hs_cos_wrapper_widget_1625305405132_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_linked_image" style="" data-hs-cos-general-type="widget" data-hs-cos-type="linked_image">
+                                       <img src="designer-tools-1@2x.png" class="hs-image-widget " style="max-width: 100%; height: auto; transform: rotate(35deg);" alt="Umbrella" title="Umbrella"></span>
+                                    </div>
+                                 </div>
+                                 <!--end widget-span -->
+                              </div>
+                              <!--end row-->
+                           </div>
+                           <!--end row-wrapper -->
+                        </div>
+                        <!--end widget-span -->
+                     </div>
+                     <!--end row-->
+                  </div>
+                  <!--end row-wrapper -->
+               </div>
+               <!--end widget-span -->
             </div>
+         </div>
+      </div>
+      <div class="container-fluid row2-content-home">
+         <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+               <div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
+                  <div class="row-fluid-wrapper row-depth-1 row-number-1 dnd_area2-row-0-vertical-alignment dnd-section">
+                     <div class="row-fluid ">
+                        <div class="span12 widget-span widget-type-cell dnd_area2-column-1-padding dnd-column dnd_area2-column-1-vertical-alignment" style="" data-widget-type="cell" data-x="0" data-w="12">
+                           <div class="row-fluid-wrapper row-depth-1 row-number-2 dnd-row">
+                              <div class="row-fluid ">
+                                 <div class="span12 widget-span widget-type-custom_widget dnd_area2-module-2-hidden dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+                                    <div id="hs_cos_wrapper_dnd_area2-module-2" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                                       <span id="hs_cos_wrapper_dnd_area2-module-2_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text">
+                                          <h2 style="text-align: center;">Your everyday inspiration, creativity and time matter to us.</h2>
+                                       </span>
+                                    </div>
+                                 </div>
+                                 <!--end widget-span -->
+                              </div>
+                              <!--end row-->
+                           </div>
+                           <!--end row-wrapper -->
+                           <div class="row-fluid-wrapper row-depth-1 row-number-3 dnd_area2-column-1-row-1-vertical-alignment dnd-row">
+                              <div class="row-fluid ">
+                                 <div class="span4 widget-span widget-type-cell cell_1625305476820-vertical-alignment dnd-column cell_1625305476820-padding" style="" data-widget-type="cell" data-x="0" data-w="4">
+                                    <div class="row-fluid-wrapper row-depth-1 row-number-4 dnd-row">
+                                       <div class="row-fluid ">
+                                          <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+                                             <div id="hs_cos_wrapper_widget_1625305474303" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                                                <span id="hs_cos_wrapper_widget_1625305474303_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text">
+                                                   <h3>Painting</h3>
+                                                   <h4>We will take you <br> where your inspirations reside right on the dot <br>Be ready to take off.</h4>
+                                                </span>
+                                             </div>
+                                          </div>
+                                          <!--end widget-span -->
+                                       </div>
+                                       <!--end row-->
+                                    </div>
+                                    <!--end row-wrapper -->
+                                    <div class="row-fluid-wrapper row-depth-1 row-number-5 dnd-row">
+                                       <div class="row-fluid ">
+                                          <div class="span12 widget-span widget-type-custom_widget widget_1625305636474-flexbox-positioning dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+                                             <div id="hs_cos_wrapper_widget_1625305636474" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-linked_image" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                                                <span id="hs_cos_wrapper_widget_1625305636474_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_linked_image" style="" data-hs-cos-general-type="widget" data-hs-cos-type="linked_image">
+                                                <img src="Color Tool.png" class="hs-image-widget " style="max-width: 100%; height: auto; margin-top: 50px; margin-left: -50px;" alt="Color Tool" title="Color Tool"></span>
+                                             </div>
+                                          </div>
+                                          <!--end widget-span -->
+                                       </div>
+                                       <!--end row-->
+                                    </div>
+                                    <!--end row-wrapper -->
+                                 </div>
+                                 <!--end widget-span -->
+                                 <div class="span4 widget-span widget-type-cell dnd-column cell_1625305532145-vertical-alignment cell_1625305532145-padding" style="" data-widget-type="cell" data-x="4" data-w="4">
+                                    <div class="row-fluid-wrapper row-depth-1 row-number-6 dnd-row">
+                                       <div class="row-fluid ">
+                                          <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+                                             <div id="hs_cos_wrapper_module_16253055321462" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                                                <span id="hs_cos_wrapper_module_16253055321462_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text">
+                                                   <h3>Writing</h3>
+                                                   <h4>Words are mirrors of the soul share your depths <br>and find those who relate to you.</h4>
+                                                </span>
+                                             </div>
+                                          </div>
+                                          <!--end widget-span -->
+                                       </div>
+                                       <!--end row-->
+                                    </div>
+                                    <!--end row-wrapper -->
+                                    <div class="row-fluid-wrapper row-depth-1 row-number-7 dnd-row">
+                                       <div class="row-fluid ">
+                                          <div class="span12 widget-span widget-type-custom_widget widget_1625305638344-flexbox-positioning dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+                                             <div id="hs_cos_wrapper_widget_1625305638344" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-linked_image" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                                                <span id="hs_cos_wrapper_widget_1625305638344_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_linked_image" style="" data-hs-cos-general-type="widget" data-hs-cos-type="linked_image">
+                                                <img src="Dotted Notebook.png" class="hs-image-widget " style="max-width: 100%;margin-top: 10px; margin-left: -20px; height: auto;" alt="Dotted Notebook" title="Dotted Notebook"></span>
+                                             </div>
+                                          </div>
+                                          <!--end widget-span -->
+                                       </div>
+                                       <!--end row-->
+                                    </div>
+                                    <!--end row-wrapper -->
+                                 </div>
+                                 <!--end widget-span -->
+                                 <div class="span4 widget-span widget-type-cell cell_1625305533657-vertical-alignment dnd-column cell_1625305533657-padding" style="" data-widget-type="cell" data-x="8" data-w="4">
+                                    <div class="row-fluid-wrapper row-depth-1 row-number-8 dnd-row">
+                                       <div class="row-fluid ">
+                                          <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+                                             <div id="hs_cos_wrapper_module_16253055336573" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                                                <span id="hs_cos_wrapper_module_16253055336573_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text">
+                                                   <h3>Your space </h3>
+                                                   <h4>Your own bubble. Your own pace. You will never feel pressured to expose your creations.</h4>
+                                                </span>
+                                             </div>
+                                          </div>
+                                          <!--end widget-span -->
+                                       </div>
+                                       <!--end row-->
+                                    </div>
+                                    <!--end row-wrapper -->
+                                    <div class="row-fluid-wrapper row-depth-1 row-number-9 dnd-row">
+                                       <div class="row-fluid ">
+                                          <div class="span12 widget-span widget-type-custom_widget widget_1625305639935-flexbox-positioning dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+                                             <div id="hs_cos_wrapper_widget_1625305639935" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-linked_image" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                                                <span id="hs_cos_wrapper_widget_1625305639935_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_linked_image" style="" data-hs-cos-general-type="widget" data-hs-cos-type="linked_image">
+                                                <img src="Tea.png" class="hs-image-widget " style="max-width: 100%; height: auto;" alt="Comfort" title="Comfort"></span>
+                                             </div>
+                                          </div>
+                                          <!--end widget-span -->
+                                       </div>
+                                       <!--end row-->
+                                    </div>
+                                    <!--end row-wrapper -->
+                                 </div>
+                                 <!--end widget-span -->
+                              </div>
+                              <!--end row-->
+                           </div>
+                           <!--end row-wrapper -->
+                        </div>
+                        <!--end widget-span -->
+                     </div>
+                     <!--end row-->
+                  </div>
+                  <!--end row-wrapper -->
+               </div>
+               <!--end widget-span -->
+            </div>
+         </div>
+      </div>
+      <!--============= End of About section- Eya Gourar ===============-->
+      <!--============= Testimonials svwl slider - Eya Gourar ====================-->
+      <div class="container-fluid row3-content-home">
+        <div class="row-fluid-wrapper">
+          <div class="row-fluid">
+            <div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
 
-        </section>
+              <div class="row-fluid-wrapper row-depth-1 row-number-1 dnd_area3-row-0-force-full-width-section dnd-section dnd_area3-row-0-vertical-alignment">
+                <div class="row-fluid ">
+                  <div class="span12 widget-span widget-type-cell dnd_area3-column-1-vertical-alignment dnd-column dnd_area3-column-1-padding" style="" data-widget-type="cell" data-x="0" data-w="12">
 
-        <!--============= ABOUT  =====================-->
-        <section class="about section container" id="about">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-        </section>
+                    <div class="row-fluid-wrapper row-depth-1 row-number-2 dnd-row">
+                      <div class="row-fluid ">
+                        <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+                          <div id="hs_cos_wrapper_widget_1625305746777" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                            <div class="swvl-slider">
+                              <div class="content-wrapper"><h2>Now, choose your tool and leave your own mark!</h2>
+                                <p>Tailored to all your aesthetics, definition of beauty and arts.</p>
+                              </div>
 
-        <!--============= PAINTING ====================-->
-        <section class="painting" id="painting">
-            <div class="painting_container">
-                <div class="painting_background">
-                    <script id="2d-fragment-shader" type="x-shader/x-fragment">// <![CDATA[
-                        #ifdef GL_ES
-                        precision highp float;
-                        #endif
-                      
-                        #define PI 3.14159265359;
-                      
-                        uniform vec2 u_resolution;
-                        uniform vec2 u_mouse;
-                        uniform float u_time;
-                        uniform float u_xpos;
-                        uniform float u_ypos;
-                      
-                      vec3 mod289(vec3 x) {
-                        return x - floor(x * (1.0 / 289.0)) * 289.0;
-                      }
-                      
-                      vec4 mod289(vec4 x) {
-                        return x - floor(x * (1.0 / 289.0)) * 289.0;
-                      }
-                      
-                      vec4 permute(vec4 x) {
-                           return mod289(((x*34.0)+1.0)*x);
-                      }
-                      
-                      vec4 taylorInvSqrt(vec4 r)
-                      {
-                        return 1.79284291400159 - 0.85373472095314 * r;
-                      }
-                      
-                      float snoise(vec3 v)
-                        { 
-                        const vec2  C = vec2(1.0/6.0, 1.0/3.0) ;
-                        const vec4  D = vec4(0.0, 0.5, 1.0, 2.0);
-                      
-                        vec3 i  = floor(v + dot(v, C.yyy) );
-                        vec3 x0 =   v - i + dot(i, C.xxx) ;
-                      
-                        vec3 g = step(x0.yzx, x0.xyz);
-                        vec3 l = 1.0 - g;
-                        vec3 i1 = min( g.xyz, l.zxy );
-                        vec3 i2 = max( g.xyz, l.zxy );
-                      
-                        vec3 x1 = x0 - i1 + C.xxx;
-                        vec3 x2 = x0 - i2 + C.yyy;
-                        vec3 x3 = x0 - D.yyy;
-                      
-                        i = mod289(i); 
-                        vec4 p = permute( permute( permute( 
-                                   i.z + vec4(0.0, i1.z, i2.z, 1.0 ))
-                                 + i.y + vec4(0.0, i1.y, i2.y, 1.0 )) 
-                                 + i.x + vec4(0.0, i1.x, i2.x, 1.0 ));
-                      
-                        float n_ = 0.142857142857;
-                        vec3  ns = n_ * D.wyz - D.xzx;
-                      
-                        vec4 j = p - 49.0 * floor(p * ns.z * ns.z);
-                      
-                        vec4 x_ = floor(j * ns.z);
-                        vec4 y_ = floor(j - 7.0 * x_ );
-                      
-                        vec4 x = x_ *ns.x + ns.yyyy;
-                        vec4 y = y_ *ns.x + ns.yyyy;
-                        vec4 h = 1.0 - abs(x) - abs(y);
-                      
-                        vec4 b0 = vec4( x.xy, y.xy );
-                        vec4 b1 = vec4( x.zw, y.zw );
-                      
-                        vec4 s0 = floor(b0)*2.0 + 1.0;
-                        vec4 s1 = floor(b1)*2.0 + 1.0;
-                        vec4 sh = -step(h, vec4(0.0));
-                      
-                        vec4 a0 = b0.xzyw + s0.xzyw*sh.xxyy ;
-                        vec4 a1 = b1.xzyw + s1.xzyw*sh.zzww ;
-                      
-                        vec3 p0 = vec3(a0.xy,h.x);
-                        vec3 p1 = vec3(a0.zw,h.y);
-                        vec3 p2 = vec3(a1.xy,h.z);
-                        vec3 p3 = vec3(a1.zw,h.w);
-                      
-                        vec4 norm = taylorInvSqrt(vec4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));
-                        p0 *= norm.x;
-                        p1 *= norm.y;
-                        p2 *= norm.z;
-                        p3 *= norm.w;
-                      
-                        vec4 m = max(0.6 - vec4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
-                        m = m * m;
-                        return 42.0 * dot( m*m, vec4( dot(p0,x0), dot(p1,x1), 
-                                                      dot(p2,x2), dot(p3,x3) ) );
-                        }
-                      
-                        void main() {
-                          vec3 color1 = vec3(75.0/255.0,144.0/255.0,210.0/255.0);
-                          vec3 color2 = vec3(252.0/255.0,244.0/255.0,111.0/255.0);
-                          vec3 color3 = vec3(244.0/255.0,238.0/255.0,87.0/255.0);
-                          vec3 color4 = vec3(242.0/255.0,232.0/255.0,99.0/255.0);
-                          vec3 color5 = vec3(242.0/255.0,205.0/255.0,96.0/255.0);
-                          vec3 color6 = vec3(255.0/255.0,255.0/255.0,255.0/255.0);
-                          vec2 lt = vec2(gl_FragCoord.x + u_xpos, gl_FragCoord.y + u_ypos);
-                          vec2 st = lt.xy/u_resolution.xy;
-                          st.x *= u_resolution.x/u_resolution.y;
-                          vec3 color = vec3(0.0);
-                          vec2 pos = vec2(st*0.6);
-                          float DF = 0.0;
-                          float a = 0.0;
-                          vec2 vel = vec2(u_time*.1);
-                          st.xy *= 0.4;
-                          float r = snoise(vec3(st.x,st.y,u_time * 0.1));
-                            
-                          if(r > 0.60){
-                              color = color5;
-                          } else if(r > 0.20){
-                              color = color4;
-                          } else if(r > -0.20){
-                              color = color3;
-                          } else if(r > -0.60){
-                              color = color2;
-                          } else if(r > -2.0){
-                              color = color1;
-                          }
-                            
-                          gl_FragColor = vec4(color,1.0);
-                        }
-                      // ]]></script>
-                      <script id="2d-vertex-shader" type="x-shader/x-vertex">// <![CDATA[
-                          attribute vec2 a_position;
-                          void main() {
-                              gl_Position = vec4(a_position, 0, 1);
-                          }
-                          // ]]></script>
-                      
-                      <canvas display  id="glscreen">  </canvas>
-                      
-        
-        
-                        <div class="PAINTING_content">
-                            <ul id="autoWidth" class="cs-hidden">
-                                <li class="item-a">
-                                    <div class="PAINTING_box">
-                                        <p class="BOX_TITLE">
-                                            Ardingly Reservoir
-                                    
-                                        </p>
-                                    
-                                        <img src="Images/Paintitng/1.PNG" class="model" alt="">
-                                        <div class="details">
-                                            <div class="BOX_profile">
-                                                <p class="BOX_owner">Owner</p>
-                                                <img src="Images/Paintitng/user1.jpg" class="Box_user_pic" alt="">
-                                                <p class="Box_user_name">Koen Lybaert</p>
-                                                <button>View profile</button>
-                                    
-                                    
-                                            </div>
-                                            <div class="PAINTING_DESCRIPTION">
-                                    
-                                                <p>She outlines her subject in warm, dark tones. In the shimmering green we can see 
-                                                    references to nature from which a figure seems to emerge. In the lower area we
-                                                     see shades that are reminiscent of skin colors. 
-                                                </p>
-                                            </div>
-                                        </div>
-                                    
-                                    
-                                    
+                              <div class="svwl-slider-item">
+
+                                <div class="svwl-slider-inner-item">
+                                  <div class="cm-row ng-star-inserted">
+                                    <div class="cm-col-md-4 cm-col-sm-6 choose-ride-left bg-red ">
+                                      <img src="#" alt="" loading="lazy" style="max-width: 100%; height: auto;">
+                                      <p> Digitals Arts<br>Girl with a pearl earring remade by <u>Tekaya Sahar</u> took us off guard<br> and won first place this month!</p>
+                                      <img src="#" alt="" loading="lazy" style="max-width: 100%; height: auto;">
+                                      <img src="#"" alt="" loading="lazy" style="max-width: 100%; height: auto;">
                                     </div>
-                                </li>
-                                <li class="item-b">
-                                    <div class="PAINTING_box">
-                                        <p class="BOX_TITLE">
-                                            They do not know, that . . .
-                                    
-                                        </p>
-                                    
-                                        <img src="Images/Paintitng/2.PNG" class="model" alt="">
-                                        <div class="details">
-                                            <div class="BOX_profile">
-                                                <p class="BOX_owner">Owner</p>
-                                                <img src="Images/Paintitng/user2.jfif" class="Box_user_pic" alt="">
-                                                <p class="Box_user_name">Rudolf Janák</p>
-                                                <button>View profile</button>
-                                    
-                                    
-                                            </div>
-                                            <div class="PAINTING_DESCRIPTION">
-                                    
-                                                <p>This painting invokes curiosity and reminds the viewer of what it was like 
-                                                    to see the world through the eyes of a child. The dark shapes consisting of 
-                                                    transparent layers of browns and greens contrast beautifully with the muted turquoise, pinks and greys.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    
-                                    
-                                    
+                                    <div class="cm-col-md-8 cm-col-sm-6 choose-ride-right" style="background-image: url(https://sketchfab.com/blogs/community/wp-content/uploads/2017/04/image02-5.png);">
                                     </div>
-                                </li>
-                                <li class="item-c">
-                                    <div class="PAINTING_box">
-                                        <p class="BOX_TITLE">
-                                            Ana.
-                                    
-                                        </p>
-                                    
-                                        <img src="Images/Paintitng/3.PNG" class="model" alt="">
-                                        <div class="details">
-                                            <div class="BOX_profile">
-                                                <p class="BOX_owner">Owner</p>
-                                                <img src="Images/Paintitng/user3.jfif" class="Box_user_pic" alt="">
-                                                <p class="Box_user_name">Ximo Gascón</p>
-                                                <button>View profile</button>
-                                    
-                                    
-                                            </div>
-                                            <div class="PAINTING_DESCRIPTION">
-                                    
-                                                <p>This series of works was inspired by the birch bark.
-                                                     She reminds me very much of human lives. Their endless chain, one after another, 
-                                                     someone nearby, someone above, someone below. But wherever you are, you are always 
-                                                     somewhere in the middle, because no one knows exactly where this chain begins and where it ends.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    
-                                    
-                                    
+                                  </div>
+                                </div>
+
+                                <div class="svwl-slider-inner-item">
+                                  <div class="cm-row ng-star-inserted" style="">
+                                    <div class="cm-col-md-4 cm-col-sm-6 choose-ride-left bg-red blue">
+                                      <img src="#" alt="" loading="lazy" style="max-width: 100%; height: auto;">
+                                      <p>Digital Arts <br>A mesmerizing dusky sky<br>made by <u>Eya Gourar</u> warmed our hearts.</p>
+                                      <img src="#" alt="" loading="lazy" style="max-width: 100%; height: auto;">
+                                      <img src="#"" alt="" loading="lazy" style="max-width: 100%; height: auto;">
                                     </div>
-                                </li>
-                                <li class="item-d">
-                                    <div class="PAINTING_box">
-                                        <p class="BOX_TITLE">
-                                            Brush Fire
-                                    
-                                        </p>
-                                    
-                                        <img src="Images/Paintitng/4.PNG" class="model" alt="">
-                                        <div class="details">
-                                            <div class="BOX_profile">
-                                                <p class="BOX_owner">Owner</p>
-                                                <img src="Images/Paintitng/user4.jfif" class="Box_user_pic" alt="">
-                                                <p class="Box_user_name">Matthew Dibble</p>
-                                                <button>View profile</button>
-                                    
-                                    
-                                            </div>
-                                            <div class="PAINTING_DESCRIPTION">
-                                    
-                                                <p>Of late, the moods of our social climate have been influencing my work, 
-                                                    whilst pushing it more primitive in one direction
-                                                </p>
-                                            </div>
-                                        </div>
-                                    
-                                    
-                                    
+                                    <div class="cm-col-md-8 cm-col-sm-6 choose-ride-right" style="background-image: url(https://www.clipstudio.net/wp-content/uploads/2020/06/0134_031.jpg);">
                                     </div>
-                                </li>
-                                <li class="item-e">
-                                    <div class="PAINTING_box">
-                                        <p class="BOX_TITLE">
-                                            Saar
-                                    
-                                        </p>
-                                    
-                                        <img src="Images/Paintitng/5.PNG" class="model" alt="">
-                                        <div class="details">
-                                            <div class="BOX_profile">
-                                                <p class="BOX_owner">Owner</p>
-                                                <img src="Images/Paintitng/user5.jfif" class="Box_user_pic" alt="">
-                                                <p class="Box_user_name">Patricia Derks</p>
-                                                <button>View profile</button>
-                                    
-                                    
-                                            </div>
-                                            <div class="PAINTING_DESCRIPTION">
-                                    
-                                                <p>It is a figurative and symbolic painting, revealing immaterial,
-                                                     ideal, or otherwise intangible truth or states. This capacity is our imagination power.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    
-                                    
-                                    
+                                  </div>
+                                </div>
+
+                                <div class="svwl-slider-inner-item">
+                                  <div class="cm-row ng-star-inserted" style="">
+                                    <div class="cm-col-md-4 cm-col-sm-6 choose-ride-left bg-red green">
+                                      <img src="#" alt="" loading="lazy" style="max-width: 100%; height: auto;">
+                                      <p>Quotes & drabbles <br> a day to day quote <br> written by <u>Nada Akkari</u> <br> won the hearts of ArtIni Users.</p>
+                                      <img src="#"" alt="" loading="lazy" style="max-width: 100%; height: auto;">
+                                      <img src="#"" alt="" loading="lazy" style="max-width: 100%; height: auto;">
                                     </div>
-                                </li>
+                                    <div class="cm-col-md-8 cm-col-sm-6 choose-ride-right" style="background-image: url(https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/1/23/1422028756119/45ceaebc-b711-440a-a7fc-6aaa76fde937-540x324.jpeg?width=700&quality=85&auto=format&fit=max&s=cec151af00e232fef4e0d83a56e3539e);">
+                                    </div>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div></div>
+
+                          </div><!--end widget-span -->
+                        </div><!--end row-->
+                      </div><!--end row-wrapper -->
+
+                    </div><!--end widget-span -->
+                  </div><!--end row-->
+                </div><!--end row-wrapper -->
+
+              </div><!--end widget-span -->
+            </div>
+          </div>
+        </div>
+
+        <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;"><::before></::before>Next</button>
+        <ul class="slick-dots" style="display: flex;" role="tablist"><li class="slick-active" role="presentation">
+          <button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 3" tabindex="0" aria-selected="true">1</button></li><li role="presentation" class="">
+            <button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 3" tabindex="-1">2</button></li>
+            <li role="presentation"><button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 3" tabindex="-1">3</button></li></ul>
+
+
+            <div class="container-fluid row4-content-home">
+              <div class="row-fluid-wrapper">
+                <div class="row-fluid">
+                  <div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
+
+                    <div class="row-fluid-wrapper row-depth-1 row-number-1 dnd-section dnd_area4-row-0-vertical-alignment">
+                      <div class="row-fluid ">
+                        <div class="span5 widget-span widget-type-cell dnd-column cell_1625305991170-vertical-alignment" style="" data-widget-type="cell" data-x="0" data-w="5">
+
+                          <div class="row-fluid-wrapper row-depth-1 row-number-2 dnd-row">
+                            <div class="row-fluid ">
+                              <div class="span12 widget-span widget-type-custom_widget widget_1625305990866-flexbox-positioning dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+                                <div id="hs_cos_wrapper_widget_1625305990866" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-linked_image" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+                                  <span id="hs_cos_wrapper_widget_1625305990866_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_linked_image" style="" data-hs-cos-general-type="widget" data-hs-cos-type="linked_image">
+                                    <img src="Designer Fav Tool Wacom.jpg" class="hs-image-widget " style="max-width: 100%;margin-top: 100px;margin-left: -90px; height: auto; " alt="Live Tracking" title="contact us"></span></div>
+
+                                </div><!--end widget-span -->
+                              </div><!--end row-->
+                            </div><!--end row-wrapper -->
+
+                          </div><!--end widget-span -->
+            <!--=============contact us section - Eya Gourar ====================-->
+
+                          <div class="span7 widget-span widget-type-cell dnd_area4-column-1-vertical-alignment dnd-column" style="" data-widget-type="cell" data-x="5" data-w="7">
+                            <div class="row-fluid-wrapper row-depth-1 row-number-3 dnd-row">
+                              <div class="row-fluid ">
+                                <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+                                  <div id="hs_cos_wrapper_dnd_area4-module-2" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_dnd_area4-module-2_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><h2>Reach out for us?</h2>
+                                    <h4>Just like you, sharing creations and thoughts about them are what we're all about, so you can always contacy us to deliver your feedback or suggestions.</h4></span></div>
+
+                                  </div><!--end widget-span -->
+                                </div><!--end row-->
+                              </div><!--end row-wrapper -->
+
+                              <div class="row-fluid-wrapper row-depth-1 row-number-4 dnd-row">
+                                <div class="row-fluid ">
+                                  <div class="span12 widget-span widget-type-custom_widget widget_1625305967013-flexbox-positioning dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+                                    <div id="hs_cos_wrapper_widget_1625305967013" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+
+
+
+                                      <a class="hs-button " href="https://app.adjust.com/19x4o34" id="hs-button_widget_1625305967013" target="_blank" rel="noopener ">
+                                        Contact us
+                                      </a>
+
+                                    </div>
+
+                                  </div><!--end widget-span -->
+                                </div><!--end row-->
+                              </div><!--end row-wrapper -->
+
+                            </div><!--end widget-span -->
+                          </div><!--end row-->
+                        </div><!--end row-wrapper -->
+
+                      </div><!--end widget-span -->
+                    </div>
+                  </div>
+                </div>
+      <!--============= End of contact us section - Eya Gourar ====================-->
+
+
+      <!--============= PAINTING ====================-->
+      <section class="painting" id="painting">
+         <div class="painting_container">
+            <div class="painting_background">
+               <script id="2d-fragment-shader" type="x-shader/x-fragment">// <![CDATA[
+                  #ifdef GL_ES
+                  precision highp float;
+                  #endif
+
+                  #define PI 3.14159265359;
+
+                  uniform vec2 u_resolution;
+                  uniform vec2 u_mouse;
+                  uniform float u_time;
+                  uniform float u_xpos;
+                  uniform float u_ypos;
+
+                  vec3 mod289(vec3 x) {
+                  return x - floor(x * (1.0 / 289.0)) * 289.0;
+                  }
+
+                  vec4 mod289(vec4 x) {
+                  return x - floor(x * (1.0 / 289.0)) * 289.0;
+                  }
+
+                  vec4 permute(vec4 x) {
+                     return mod289(((x*34.0)+1.0)*x);
+                  }
+
+                  vec4 taylorInvSqrt(vec4 r)
+                  {
+                  return 1.79284291400159 - 0.85373472095314 * r;
+                  }
+
+                  float snoise(vec3 v)
+                  {
+                  const vec2  C = vec2(1.0/6.0, 1.0/3.0) ;
+                  const vec4  D = vec4(0.0, 0.5, 1.0, 2.0);
+
+                  vec3 i  = floor(v + dot(v, C.yyy) );
+                  vec3 x0 =   v - i + dot(i, C.xxx) ;
+
+                  vec3 g = step(x0.yzx, x0.xyz);
+                  vec3 l = 1.0 - g;
+                  vec3 i1 = min( g.xyz, l.zxy );
+                  vec3 i2 = max( g.xyz, l.zxy );
+
+                  vec3 x1 = x0 - i1 + C.xxx;
+                  vec3 x2 = x0 - i2 + C.yyy;
+                  vec3 x3 = x0 - D.yyy;
+
+                  i = mod289(i);
+                  vec4 p = permute( permute( permute(
+                             i.z + vec4(0.0, i1.z, i2.z, 1.0 ))
+                           + i.y + vec4(0.0, i1.y, i2.y, 1.0 ))
+                           + i.x + vec4(0.0, i1.x, i2.x, 1.0 ));
+
+                  float n_ = 0.142857142857;
+                  vec3  ns = n_ * D.wyz - D.xzx;
+
+                  vec4 j = p - 49.0 * floor(p * ns.z * ns.z);
+
+                  vec4 x_ = floor(j * ns.z);
+                  vec4 y_ = floor(j - 7.0 * x_ );
+
+                  vec4 x = x_ *ns.x + ns.yyyy;
+                  vec4 y = y_ *ns.x + ns.yyyy;
+                  vec4 h = 1.0 - abs(x) - abs(y);
+
+                  vec4 b0 = vec4( x.xy, y.xy );
+                  vec4 b1 = vec4( x.zw, y.zw );
+
+                  vec4 s0 = floor(b0)*2.0 + 1.0;
+                  vec4 s1 = floor(b1)*2.0 + 1.0;
+                  vec4 sh = -step(h, vec4(0.0));
+
+                  vec4 a0 = b0.xzyw + s0.xzyw*sh.xxyy ;
+                  vec4 a1 = b1.xzyw + s1.xzyw*sh.zzww ;
+
+                  vec3 p0 = vec3(a0.xy,h.x);
+                  vec3 p1 = vec3(a0.zw,h.y);
+                  vec3 p2 = vec3(a1.xy,h.z);
+                  vec3 p3 = vec3(a1.zw,h.w);
+
+                  vec4 norm = taylorInvSqrt(vec4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));
+                  p0 *= norm.x;
+                  p1 *= norm.y;
+                  p2 *= norm.z;
+                  p3 *= norm.w;
+
+                  vec4 m = max(0.6 - vec4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                  m = m * m;
+                  return 42.0 * dot( m*m, vec4( dot(p0,x0), dot(p1,x1),
+                                                dot(p2,x2), dot(p3,x3) ) );
+                  }
+
+                  void main() {
+                    vec3 color1 = vec3(75.0/255.0,144.0/255.0,210.0/255.0);
+                    vec3 color2 = vec3(252.0/255.0,244.0/255.0,111.0/255.0);
+                    vec3 color3 = vec3(244.0/255.0,238.0/255.0,87.0/255.0);
+                    vec3 color4 = vec3(242.0/255.0,232.0/255.0,99.0/255.0);
+                    vec3 color5 = vec3(242.0/255.0,205.0/255.0,96.0/255.0);
+                    vec3 color6 = vec3(255.0/255.0,255.0/255.0,255.0/255.0);
+                    vec2 lt = vec2(gl_FragCoord.x + u_xpos, gl_FragCoord.y + u_ypos);
+                    vec2 st = lt.xy/u_resolution.xy;
+                    st.x *= u_resolution.x/u_resolution.y;
+                    vec3 color = vec3(0.0);
+                    vec2 pos = vec2(st*0.6);
+                    float DF = 0.0;
+                    float a = 0.0;
+                    vec2 vel = vec2(u_time*.1);
+                    st.xy *= 0.4;
+                    float r = snoise(vec3(st.x,st.y,u_time * 0.1));
+
+                    if(r > 0.60){
+                        color = color5;
+                    } else if(r > 0.20){
+                        color = color4;
+                    } else if(r > -0.20){
+                        color = color3;
+                    } else if(r > -0.60){
+                        color = color2;
+                    } else if(r > -2.0){
+                        color = color1;
+                    }
+
+                    gl_FragColor = vec4(color,1.0);
+                  }
+                  // ]]>
+               </script>
+               <script id="2d-vertex-shader" type="x-shader/x-vertex">// <![CDATA[
+                  attribute vec2 a_position;
+                  void main() {
+                      gl_Position = vec4(a_position, 0, 1);
+                  }
+                  // ]]>
+               </script>
+               <canvas display  id="glscreen">  </canvas>
+               <div class="PAINTING_content">
+                  <ul id="autoWidth" class="cs-hidden">
+                     <li class="item-a">
+                        <div class="PAINTING_box">
+                           <p class="BOX_TITLE">
+                              Ardingly Reservoir
+                           </p>
+                           <img src="Images/Paintitng/1.PNG" class="model" alt="">
+                           <div class="details">
+                              <div class="BOX_profile">
+                                 <p class="BOX_owner">Owner</p>
+                                 <img src="Images/Paintitng/user1.jpg" class="Box_user_pic" alt="">
+                                 <p class="Box_user_name">Koen Lybaert</p>
+                                 <button>View profile</button>
+                              </div>
+                              <div class="PAINTING_DESCRIPTION">
+                                 <p>She outlines her subject in warm, dark tones. In the shimmering green we can see
+                                    references to nature from which a figure seems to emerge. In the lower area we
+                                    see shades that are reminiscent of skin colors.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="item-b">
+                        <div class="PAINTING_box">
+                           <p class="BOX_TITLE">
+                              They do not know, that . . .
+                           </p>
+                           <img src="Images/Paintitng/2.PNG" class="model" alt="">
+                           <div class="details">
+                              <div class="BOX_profile">
+                                 <p class="BOX_owner">Owner</p>
+                                 <img src="Images/Paintitng/user2.jfif" class="Box_user_pic" alt="">
+                                 <p class="Box_user_name">Rudolf Janák</p>
+                                 <button>View profile</button>
+                              </div>
+                              <div class="PAINTING_DESCRIPTION">
+                                 <p>This painting invokes curiosity and reminds the viewer of what it was like
+                                    to see the world through the eyes of a child. The dark shapes consisting of
+                                    transparent layers of browns and greens contrast beautifully with the muted turquoise, pinks and greys.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="item-c">
+                        <div class="PAINTING_box">
+                           <p class="BOX_TITLE">
+                              Ana.
+                           </p>
+                           <img src="Images/Paintitng/3.PNG" class="model" alt="">
+                           <div class="details">
+                              <div class="BOX_profile">
+                                 <p class="BOX_owner">Owner</p>
+                                 <img src="Images/Paintitng/user3.jfif" class="Box_user_pic" alt="">
+                                 <p class="Box_user_name">Ximo Gascón</p>
+                                 <button>View profile</button>
+                              </div>
+                              <div class="PAINTING_DESCRIPTION">
+                                 <p>This series of works was inspired by the birch bark.
+                                    She reminds me very much of human lives. Their endless chain, one after another,
+                                    someone nearby, someone above, someone below. But wherever you are, you are always
+                                    somewhere in the middle, because no one knows exactly where this chain begins and where it ends.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="item-d">
+                        <div class="PAINTING_box">
+                           <p class="BOX_TITLE">
+                              Brush Fire
+                           </p>
+                           <img src="Images/Paintitng/4.PNG" class="model" alt="">
+                           <div class="details">
+                              <div class="BOX_profile">
+                                 <p class="BOX_owner">Owner</p>
+                                 <img src="Images/Paintitng/user4.jfif" class="Box_user_pic" alt="">
+                                 <p class="Box_user_name">Matthew Dibble</p>
+                                 <button>View profile</button>
+                              </div>
+                              <div class="PAINTING_DESCRIPTION">
+                                 <p>Of late, the moods of our social climate have been influencing my work,
+                                    whilst pushing it more primitive in one direction
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="item-e">
+                        <div class="PAINTING_box">
+                           <p class="BOX_TITLE">
+                              Saar
+                           </p>
+                           <img src="Images/Paintitng/5.PNG" class="model" alt="">
+                           <div class="details">
+                              <div class="BOX_profile">
+                                 <p class="BOX_owner">Owner</p>
+                                 <img src="Images/Paintitng/user5.jfif" class="Box_user_pic" alt="">
+                                 <p class="Box_user_name">Patricia Derks</p>
+                                 <button>View profile</button>
+                              </div>
+                              <div class="PAINTING_DESCRIPTION">
+                                 <p>It is a figurative and symbolic painting, revealing immaterial,
+                                    ideal, or otherwise intangible truth or states. This capacity is our imagination power.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+
+      </section>
+
+      <!--=========================Test ===================-->
+      <section class="test">
+      </section>
+   </main>
+   <!--===========Footer (Eya Gourar) ==============-->
+   <footer class="footer">
+      <div class="footer__container">
+         <div class="footer__row">
+            <div class="footer__col col_one">
+               <div id="hs_cos_wrapper_download_app" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                  <span id="hs_cos_wrapper_download_app_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text">
+                     <h5>DOWNLOAD APP</h5>
+                  </span>
+               </div>
+               <ul>
+                  <li>
+                     <div id="hs_cos_wrapper_play_store_image" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-linked_image" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                        <span id="hs_cos_wrapper_play_store_image_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_linked_image" style="" data-hs-cos-general-type="widget" data-hs-cos-type="linked_image"><a href="#" target="_blank" id="hs-link-play_store_image_" rel="noopener" style="border-width:0px;border:0px;">
+                        <img src="https://www.swvl.com/hubfs/raw_assets/public/Swvl_July2021/images/google-play.svg" class="hs-image-widget " style="width:384px;border-width:0px;border:0px;" width="384" alt="Play store" title="Play store"></a></span>
+                     </div>
+                  </li>
+                  <li>
+                     <div id="hs_cos_wrapper_app_store_image" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-linked_image" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                        <span id="hs_cos_wrapper_app_store_image_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_linked_image" style="" data-hs-cos-general-type="widget" data-hs-cos-type="linked_image">
+                        <a href="#" target="_blank" id="hs-link-app_store_image_" rel="noopener" style="border-width:0px;border:0px;"><img src="https://www.swvl.com/hubfs/raw_assets/public/Swvl_July2021/images/apple-store.svg" class="hs-image-widget " style="width:384px;border-width:0px;border:0px;" width="384" alt="App store" title="App store"></a></span>
+                     </div>
+                  </li>
+                  <li>
+                     <div id="hs_cos_wrapper_app_gallery_image" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-linked_image" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                        <span id="hs_cos_wrapper_app_gallery_image_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_linked_image" style="" data-hs-cos-general-type="widget" data-hs-cos-type="linked_image"><a href="#" target="_blank" id="hs-link-app_gallery_image_" rel="noopener" style="border-width:0px;border:0px;">
+                        <img src="https://www.swvl.com/hubfs/raw_assets/public/Swvl_July2021/images/app-gallery.svg" class="hs-image-widget " style="width:384px;border-width:0px;border:0px;" width="384" alt="App store" title="App store"></a></span>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+            <div class="footer__col footer_menu col_two">
+               <div id="hs_cos_wrapper_who_we_are_menu" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                  <span id="hs_cos_wrapper_who_we_are_menu_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="menu">
+                     <div id="hs_menu_wrapper_who_we_are_menu_" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal" role="navigation" data-sitemap-name="default" data-menu-id="49937828682" aria-label="Navigation Menu">
+                        <ul role="menu" class="active-branch">
+                           <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children active-branch" role="none">
+                              <a href="javascript:;" aria-haspopup="true" aria-expanded="false" role="menuitem">WHO WE ARE</a>
+                              <ul role="menu" class="hs-menu-children-wrapper active-branch">
+                                 <li class="hs-menu-item hs-menu-depth-2 active active-branch" role="none"><a href="https://www.ArtIni.com/About_U" role="menuitem">About Us</a></li>
+                                 <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://www.ArtIni.com/Contact_Us" role="menuitem">Contact Us </a></li>
                               </ul>
-                       
-            
+                           </li>
+                        </ul>
+                     </div>
+                  </span>
+               </div>
             </div>
-                
-                
-                                      </div>
-                
-                </div>
-                         
-                
-
-           
-        </section>
-
-
-
-        <
-
-        <!--============= WRITING ====================-->
-        <section class="writing section container">
-            
-        </section>
-
-
-
-        <!=========================Test ===================>
-        <section class="test">
-
-           
-
-
-       
-    
-    
-    
-        </section>
-       
-
-    </main>
-
-    <!--============= Login ====================-->
-
-
-    <!--============= Sign UP ====================-->
-
-
-    <footer></footer>
-
-
-    <!========== Test ============= >
-
-
-
-  
- 
-    <!--==================SCROLL UP=======================-->
-
-
-    <!--==================SCROLL REVEAL===================-->
-    
-
-    <!--==================MAIN JS=========================-->
-    <script src="assets/main.js"></script>
+            <div class="footer__col footer_menu col_three">
+               <div id="hs_cos_wrapper_what_we_do_menu" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                  <span id="hs_cos_wrapper_what_we_do_menu_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="menu">
+                     <div id="hs_menu_wrapper_what_we_do_menu_" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal" role="navigation" data-sitemap-name="default" data-menu-id="48971788107" aria-label="Navigation Menu">
+                        <ul role="menu">
+                           <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children" role="none">
+                              <a href="javascript:;" aria-haspopup="true" aria-expanded="false" role="menuitem">WHAT WE DO</a>
+                              <ul role="menu" class="hs-menu-children-wrapper">
+                                 <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://www.ArtIni.com/Painting" role="menuitem">Painting Space</a></li>
+                                 <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="Writing.html" role="menuitem">Writing Space</a></li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                  </span>
+               </div>
+            </div>
+            <div class="footer__col social_share col_four">
+               <ul class="social-ul">
+                  <li>
+                     <a href="#" target="_blank">
+                     <img src="https://www.swvl.com/hubfs/raw_assets/public/Swvl_July2021/images/instagram.svg" alt="insta-image">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#" target="_blank">
+                     <img src="https://www.swvl.com/hubfs/raw_assets/public/Swvl_July2021/images/facebook.svg" alt="Facebook">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="h#" target="_blank">
+                     <img src="https://www.swvl.com/hubfs/raw_assets/public/Swvl_July2021/images/twitter.svg" alt="twitter-img">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#" target="_blank">
+                     <img src="https://www.swvl.com/hubfs/raw_assets/public/Swvl_July2021/images/youtube.svg" alt="youtube-img">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#" target="_blank">
+                     <img src="https://www.swvl.com/hubfs/raw_assets/public/Swvl_July2021/images/linkdin.svg" alt="linkedin-img">
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <div class="footer__col footer_logo col_five">
+               <div id="hs_cos_wrapper_footer_logo" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                  <span id="hs_cos_wrapper_footer_logo_hs_logo_widget" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="logo">
+                  <a href="/home?hsLang=en" id="hs-link-footer_logo_hs_logo_widget" style="border-width:0px;border:0px;"><img src="#" class="hs-image-widget " style="width:384px;border-width:0px;border:0px;" width="384" alt="ArtIni" title="ArtIni"></a></span>
+               </div>
+            </div>
+         </div>
+         <div id="privacy-terms" style="margin:30px 15px 0 0;font-size: 16px; font-weight: 300;line-height: 24px;text-align: right; ">
+            <a href="#" style="color: #fff;margin: 5px;">Privacy</a>
+            <a href="#" style="color: #fff;margin: 5px;">Terms</a>
+         </div>
+      </div>
+   </footer>
+   </div>
+   <!--Test-- >
+   <!--==================SCROLL UP=======================-->
+   <!--==================SCROLL REVEAL===================-->
+   <!--==================MAIN JS=========================-->
+   <script src="assets/main.js"></script>
    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <!-- Initialize Swiper -->
+   <script>
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 30,
@@ -508,11 +1214,33 @@
           prevEl: ".swiper-button-prev",
         },
       });
-    </script>
+   </script>
 
-  
-  
+   <!--==================testimonials svwl slider JS code ((Eya Gourar))=========================-->
 
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
 
+<script type="text/javascript">
+    var module_50033739815 = function () {
+    var __hs_messages = {};
+    i18n_getmessage = function () {
+    return hs_i18n_getMessage(__hs_messages, hsVars.language, arguments)
+    }, i18n_getlanguage = function () {
+    return hsVars.language
+    };
+    const isRtl = 1 == document.querySelector(".swvl-slider").querySelectorAll('[dir="rtl"]').length;
+    $(".svwl-slider-item").slick({
+    dots: !0,
+    infinite: !0,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    rtl: isRtl
+    })
+    }();
+</script>
+<!--================== End of testimonials svwl slider JS code ((Eya Gourar))=========================-->
 
 </body>
