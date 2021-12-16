@@ -3,192 +3,211 @@
     <head>
     <meta charset="utf-8">
     <title>ArtIni | Let your art see the light</title>
-    <link rel="shortcut icon" href="#">
+    <link rel="shortcut icon" href="Images/logo.png">
     <meta name="description" content="ArtIni | Let your art see the light">
 
-    <link type="text/css" rel="stylesheet" href="main-writing.css">
-    <link type="text/css" rel="stylesheet" href="some.css">
+
+    <link type="text/css" rel="stylesheet" href="bottom.css">
     <link type="text/css" rel="stylesheet" href="icon.css">
-    <link type="text/css" rel="stylesheet" href="theme.css">
+    <link type="text/css" rel="stylesheet" href="banner.css">
+    <link type="text/css" rel="stylesheet" href="theme-override.css">
     <link type="text/css" rel="stylesheet" href="slick.css">
+    <link type="text/css" rel="stylesheet" href="slick-min.css">
+    <link type="text/css" rel="stylesheet" href="lightbox.css">
     <link type="text/css" rel="stylesheet" href="slick-theme.min.css">
+<!--external tools-->
+    <link type="text/css" rel="stylesheet" href="https://www.swvl.com/hs-fs/hub/9490826/hub_generated/template_assets/49936569226/1638371858749/Swvl_July2021/css/main.min.css">
+<!-- my additional local Styles -->
+<style id="hs_editor_style" type="text/css">
 
-    <!-- Editor Styles -->
-    <style id="hs_editor_style" type="text/css">
-
-#form {
-  width: 100%;
-  height: 100%;
-}
-.contact-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 20px auto;
-  padding: 40px;
-  position: relative;
-  max-width: 840px;
-}
-
-/* Left contact page */
-.form-horizontal {
-  /*float: left;*/
-  max-width: 400px;
-  font-family: 'Lato';
-  font-weight: 400;
-}
-
-.form-control,
-textarea {
-  max-width: 400px;
-  background-color: #fff;
-  color: ##212529;
-  letter-spacing: 1px;
-  overflow: scroll
-}
-
-.send-button {
-  margin-top: 15px;
-  height: 34px;
-  width: 120px;
-  overflow: hidden;
-  transition: all .2s ease-in-out;
-}
-
-.alt-send-button {
-  width: 400px;
-  height: 34px;
-  transition: all .2s ease-in-out;
-}
-
-.send-text {
-  display: block;
-  position: absolute;
-  margin-bottom: 10px;
-  font: 700 12px 'Roboto', sans-serif;
-  letter-spacing: 1px;
-}
-
-.alt-send-button:hover {
-  transform: translate3d(0px, -29px, 0px);
-}
-
-hr {
-  border-color: rgba(255,255,255,.6);
-  label {
-    display: block;
-    font: 1rem 'Fira Sans', sans-serif;
-}
-
-input,
-label {
-    margin: .4rem 0;
-}
-
-}
-
-/* Begin Media Queries*/
-@media screen and (max-width: 850px) {
+  #form {
+    width: 100%;
+    height: 100%;
+  }
   .contact-wrapper {
     display: flex;
-    flex-direction: column;
-  }
-  .direct-contact-container, .form-horizontal {
-    margin: 0 auto;
-  }
-
-  .direct-contact-container {
-    margin-top: 60px;
-    max-width: 300px;
-  }
-  .social-media-list li {
-    height: 60px;
-    width: 60px;
-    line-height: 60px;
-  }
-  .social-media-list li:after {
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-  }
-}
-
-@media screen and (max-width: 569px) {
-
-  .direct-contact-container, .form-wrapper {
-    float: none;
-    margin: 0 auto;
-  }
-  .form-control, textarea {
-
-    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 40px;
+    position: relative;
+    max-width: 840px;
   }
 
+  /* Left contact page */
+  .form-horizontal {
+    /*float: left;*/
+    max-width: 400px;
+    font-family: 'Lato';
+    font-weight: 400;
+  }
 
+  .form-control,
   textarea {
-    width: 280px;
+    max-width: 400px;
+    background-color: #fff;
+    color: ##212529;
+    letter-spacing: 1px;
+    overflow: scroll
   }
 
-  .direct-contact-container {
-    margin-top: 60px;
-    max-width: 280px;
-  }
-}
-
-@media screen and (max-width: 410px) {
   .send-button {
-    width: 99%;
+    margin-top: 15px;
+    height: 34px;
+    width: 120px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
   }
-}
-    .DND_banner-row-0-force-full-width-section > .row-fluid {
-      max-width: none !important;
+
+  .alt-send-button {
+    width: 400px;
+    height: 34px;
+    transition: all .2s ease-in-out;
+  }
+
+  .send-text {
+    display: block;
+    position: absolute;
+    margin-bottom: 10px;
+    font: 700 12px 'Roboto', sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .alt-send-button:hover {
+    transform: translate3d(0px, -29px, 0px);
+  }
+
+  hr {
+    border-color: rgba(255,255,255,.6);
+    label {
+      display: block;
+      font: 1rem 'Fira Sans', sans-serif;
+  }
+
+  input,
+  label {
+      margin: .4rem 0;
+  }
+
+  }
+
+  /* Begin Media Queries*/
+  @media screen and (max-width: 850px) {
+    .contact-wrapper {
+      display: flex;
+      flex-direction: column;
     }
-    .widget_1625201599770-flexbox-positioning {
-      display: -ms-flexbox !important;
-      -ms-flex-direction: column !important;
-      -ms-flex-align: start !important;
-      -ms-flex-pack: start;
-      display: flex !important;
-      flex-direction: column !important;
-      align-items: flex-start !important;
-      justify-content: flex-start;
-    }
-    .widget_1625201599770-flexbox-positioning > div {
-      max-width: 100%;
-      flex-shrink: 0 !important;
-    }
-    .dnd_area2-row-0-background-color {
-      background-color: rgba(252, 21, 59, 1) !important;
-    }
-    .dnd_area3-row-0-background-image {
-      background-size: cover !important;
-      background-position: center center !important;
-      background-repeat: no-repeat !important;
+    .direct-contact-container, .form-horizontal {
+      margin: 0 auto;
     }
 
-    .dnd_area3-row-0-padding {
-      padding-left: 0px !important;
-      padding-right: 0px !important;
+    .direct-contact-container {
+      margin-top: 60px;
+      max-width: 300px;
     }
-    .cell_16252101962922-padding {
-      padding-left: 0px !important;
-      padding-right: 0px !important;
+    .social-media-list li {
+      height: 60px;
+      width: 60px;
+      line-height: 60px;
     }
-    </style>
+    .social-media-list li:after {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+    }
+  }
+
+  @media screen and (max-width: 569px) {
+
+    .direct-contact-container, .form-wrapper {
+      float: none;
+      margin: 0 auto;
+    }
+    .form-control, textarea {
+
+      margin: 0 auto;
+    }
+
+
+    .name, .email, textarea {
+      width: 280px;
+    }
+
+    .direct-contact-container {
+      margin-top: 60px;
+      max-width: 280px;
+    }
+    .social-media-list {
+      left: 0;
+    }
+    .social-media-list li {
+      height: 55px;
+      width: 55px;
+      line-height: 55px;
+      font-size: 2rem;
+    }
+    .social-media-list li:after {
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+    }
+
+  }
+
+  @media screen and (max-width: 410px) {
+    .send-button {
+      width: 99%;
+    }
+  }
+      .DND_banner-row-0-force-full-width-section > .row-fluid {
+        max-width: none !important;
+      }
+      .widget_1625201599770-flexbox-positioning {
+        display: -ms-flexbox !important;
+        -ms-flex-direction: column !important;
+        -ms-flex-align: start !important;
+        -ms-flex-pack: start;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        justify-content: flex-start;
+      }
+      .widget_1625201599770-flexbox-positioning > div {
+        max-width: 100%;
+        flex-shrink: 0 !important;
+      }
+      .dnd_area2-row-0-background-color {
+        background-color: rgba(252, 21, 59, 1) !important;
+      }
+      .dnd_area3-row-0-background-image {
+        background-size: cover !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+      }
+
+      .dnd_area3-row-0-padding {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+      .cell_16252101962922-padding {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+      </style>
 <style>
-.banner     ,.row2-content-writing{
-  /* The image used */
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/0e/Stipula_fountain_pen.jpg");
+  .banner     ,.row2-content-captains{
+    /* The image used */
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/0e/Stipula_fountain_pen.jpg");
 
-  /* Set a specific height */
-  min-height: 500px;
+    /* Set a specific height */
+    min-height: 500px;
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 </style>
 
 </head>
@@ -216,7 +235,7 @@ label {
 
 
 
-<div class="banner-section writing-banner">
+<div class="banner-section captains-banner">
   <div class="container-fluid banner-area">
 <div class="row-fluid-wrapper">
 <div class="row-fluid">
@@ -249,9 +268,9 @@ label {
 </div>
 </div>
 
-<main id="main-content" class="body-container-wrapper writing-page">
+<main id="main-content" class="body-container-wrapper captains-page">
 
-<div class="container-fluid row1-content-writing">
+<div class="container-fluid row1-content-captains">
 <div class="row-fluid-wrapper">
 <div class="row-fluid">
 <div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
@@ -376,7 +395,7 @@ label {
 </div>
 </div>
 </div>
-<div class="container-fluid row2-content-writing">
+<div class="container-fluid row2-content-captains">
 <div class="row-fluid-wrapper">
 <div class="row-fluid">
 <div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
@@ -544,7 +563,8 @@ label {
 
 
                 <span id="hs_cos_wrapper_app_store_image_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_linked_image" style="" data-hs-cos-general-type="widget" data-hs-cos-type="linked_image">
-                <a href="#" target="_blank" id="hs-link-app_store_image_" rel="noopener" style="border-width:0px;border:0px;"><img src="https://www.swvl.com/hubfs/raw_assets/public/Swvl_July2021/images/apple-store.svg" class="hs-image-widget " style="width:384px;border-width:0px;border:0px;" width="384" alt="App store" title="App store"></a></span></div>
+                <a href="#" target="_blank" id="hs-link-app_store_image_" rel="noopener" style="border-width:0px;border:0px;">
+                  <img src="https://www.swvl.com/hubfs/raw_assets/public/Swvl_July2021/images/apple-store.svg" class="hs-image-widget " style="width:384px;border-width:0px;border:0px;" width="384" alt="App store" title="App store"></a></span></div>
               </li>
               <li>
 
@@ -571,8 +591,8 @@ label {
                     <ul role="menu" class="active-branch">
                       <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children active-branch" role="none"><a href="javascript:;" aria-haspopup="true" aria-expanded="false" role="menuitem">WHO WE ARE</a>
                         <ul role="menu" class="hs-menu-children-wrapper active-branch">
-                          <li class="hs-menu-item hs-menu-depth-2 active active-branch" role="none"><a href="https://www.ArtIni.com/About_U" role="menuitem">About Us</a></li>
-                          <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://www.ArtIni.com/Contact_Us" role="menuitem">Contact Us </a></li>
+                          <li class="hs-menu-item hs-menu-depth-2 active active-branch" role="none"><a href="h#" role="menuitem">About Us</a></li>
+                          <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="Contactus.html" role="menuitem">Contact Us </a></li>
                         </ul></li>
                       </ul>
                     </div></span></div>
@@ -581,9 +601,10 @@ label {
                     <div id="hs_cos_wrapper_what_we_do_menu" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
                       <span id="hs_cos_wrapper_what_we_do_menu_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="menu"><div id="hs_menu_wrapper_what_we_do_menu_" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal" role="navigation" data-sitemap-name="default" data-menu-id="48971788107" aria-label="Navigation Menu">
                         <ul role="menu">
-                          <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children" role="none"><a href="javascript:;" aria-haspopup="true" aria-expanded="false" role="menuitem">WHAT WE DO</a>
+                          <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children" role="none">
+                            <a href="javascript:;" aria-haspopup="true" aria-expanded="false" role="menuitem">WHAT WE DO</a>
                             <ul role="menu" class="hs-menu-children-wrapper">
-                              <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://www.ArtIni.com/Painting" role="menuitem">Painting Space</a></li>
+                              <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="Painting.html" role="menuitem">Painting Space</a></li>
                               <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="Writing.html" role="menuitem">Writing Space</a></li>
                             </ul></li>
                           </ul>
@@ -632,7 +653,8 @@ label {
 
 
                           <span id="hs_cos_wrapper_footer_logo_hs_logo_widget" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="logo">
-                          <a href="/home?hsLang=en" id="hs-link-footer_logo_hs_logo_widget" style="border-width:0px;border:0px;"><img src="#" class="hs-image-widget " style="width:384px;border-width:0px;border:0px;" width="384" alt="ArtIni" title="ArtIni"></a></span>
+                          <a href="ArtIni.html" id="hs-link-footer_logo_hs_logo_widget" style="border-width:0px;border:0px;">
+                            <img src="Images/logo.png" class="hs-image-widget " style="width:384px;border-width:0px;border:0px;" width="384" alt="ArtIni" title="ArtIni"></a></span>
                         </div>
 
                       </div>
@@ -649,11 +671,3 @@ label {
 
     </div>
 
-
-
-
-
-
-
-
-</body></html>
