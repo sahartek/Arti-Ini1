@@ -106,95 +106,29 @@ button:active,
 	color: #fff
 }
 
-form,
-.submitted-message {
-	font-size: 16px;
-	color: #212529;
-	font-weight:
+form input[type=submit],
+form .hs-button {
+	background-color: rgba(252, 21, 59, 1.0);
+	border-color: rgba(255, 255, 255, 0.0);
+	border-radius: 0px;
+	color: rgba(255, 255, 255, 1.0);
+	padding: 20px 35px
 }
 
-.form-title {
-	background-color: rgba(73, 74, 82, 0.0);
-	color: #212529
-}
-
-form label {
-	color: #212529
-}
-
-form legend {
-	color: #212529
-}
-
-form input[type=text],
-form input[type=email],
-form input[type=password],
-form input[type=tel],
-form input[type=number],
-form input[type=file],
-form select,
-form textarea {
-	border-color: #212529;
-	color: #212529
-}
-
-form input[type=text]:focus,
-form input[type=email]:focus,
-form input[type=password]:focus,
-form input[type=tel]:focus,
-form input[type=number]:focus,
-form input[type=file]:focus,
-form select:focus,
-form textarea:focus {
-	border-color: #fff
-}
-
-::-webkit-input-placeholder {
-	color: #212529
-}
-
-::-webkit-input-placeholder,
-::-moz-placeholder,
-:-ms-input-placeholder,
-:-moz-placeholder,
-::placeholder,
-.hs-fieldtype-date .input .hs-dateinput:before {
-	color: #212529
-}
-
-.fn-date-picker td.is-selected .pika-button {
-	background: #494a52
-}
-
-.fn-date-picker td .pika-button:hover {
-	background-color: #494a52 !important
-}
-
-.fn-date-picker td.is-today .pika-button {
-	color: #494a52
-}
-
-table {
-	background-color: rgba(255, 255, 255, 1.0);
-	border-color: #494a52
-}
-
-th,
-td {
-	border-color: #494a52;
-	color: #494a52
-}
-
-thead th,
-thead td {
-	background-color: rgba(73, 74, 82, 1.0);
-	border-bottom-color: #494a52;
+form input[type=submit]:hover,
+form input[type=submit]:focus,
+form .hs-button:hover,
+form .hs-button:focus {
+	background-color: rgba(218, 20, 52, 1.0);
+	border-color: rgba(218, 20, 52, 1.0);
 	color: #fff
 }
 
-tfoot td {
-	background-color: rgba(255, 255, 255, 1.0);
-	color: #494a52
+form input[type=submit]:active,
+form .hs-button:active {
+	background-color: rgba(255, 61, 99, 1.0);
+	border-color: rgba(255, 255, 255, 0.0);
+	color: rgba(255, 255, 255, 1.0)
 }
 
 header.header {
@@ -203,6 +137,16 @@ header.header {
 
 .header__container {
 	max-width: 2300px
+}
+
+@media(max-width:767px) {
+	.header__navigation {
+		background-color: rgba(0, 0, 0, 0.0)
+	}
+	.header__navigation-toggle svg,
+	.menu-arrow svg {
+		fill: #fff
+	}
 }
 
 footer.footer {
@@ -222,10 +166,6 @@ footer.footer {
 	color: rgba(255, 255, 255, 1.0)
 }
 
-secondary-btn:hover {
-	color: #fc153b
-}
-
 .row1-content-home h2:after {
 	margin-bottom: 70px;
 	content: "";
@@ -238,7 +178,7 @@ secondary-btn:hover {
 }
 
 @media(min-width:768px) {
-	.homepage-layout .span12.widget-span.widget-type-cell.dnd_area2-column-1-padding.dnd-column.dnd_area2-column-1-vertical-alignment .row-number-3.dnd_area2-column-1-row-1-vertical-alignment>.row-fluid,
+	.homepage-layout .span12.widget-span.widget-type-cell.area2-column-1-padding.dnd-column.area2-column-1 .row-number-3.area2-column-1-row-1>.row-fluid,
 	.row-number-3.dnd-row .row-fluid {
 		justify-content: space-between !important;
 		margin: auto !important;
